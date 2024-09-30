@@ -1,0 +1,130 @@
+:root {
+  --spacing-small: 0.5rem;
+  --spacing-medium: 2rem;
+  --spacing-large: 3.2rem;
+  --font-size-small: 1.2rem;
+  --font-size-medium: 1.6rem;
+  --font-size-large: 2.4rem;
+  --font-size-xlarge: 3.2rem;
+  --font-size-xxlarge: 4.8rem;
+  --primary-color: #f582ae;
+  --secondary-color: #f3d2c1;
+  --tertiary-color: #8bd3dd;
+  --highlight-color: #fef6e4;
+  --dark-color: #001858;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  background-color: #f7f5ff;
+  font-size: 62.5%;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  height: 40vh;
+  border: 2px solid black;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--spacing-large);
+  background-color: var(--secondary-color);
+}
+
+h1 {
+  color: var(--dark-color);
+  font-size: var(--font-size-xxlarge);
+}
+
+h2 {
+  font-size: var(--font-size-medium);
+  margin-bottom: 20px;
+}
+p {
+  font-size: var(--font-size-medium);
+  padding: 1rem;
+}
+
+header p {
+  color: var(--dark-color);
+}
+
+section {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 50px;
+}
+
+section div {
+  margin-bottom: 40px;
+}
+
+.p-container {
+  background-color: var(--dark-color);
+  color: var(--highlight-color);
+  display: flex;
+}
+
+/* JUSTIFY CONTENT */
+.start {
+  justify-content: start;
+}
+
+.end {
+  justify-content: end;
+}
+
+.center {
+  justify-content: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+/* ALIGN ITEMS */
+
+.align-items {
+ background-color: var(--dark-color);
+  color: var(--highlight-color);
+  display: flex;
+  height: 300px;
+}
+
+.align-start{
+    align-items: start;
+}
+
+.align-end{
+    align-items: end;
+}
+.align-center{
+    align-items: center;
+}
+
+.align-stretch{
+    align-items: stretch;
+}
+.align-stretch p{
+    border: 2px solid black;
+}
